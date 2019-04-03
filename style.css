@@ -1,0 +1,96 @@
+* {
+    top: 0;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #EDEDED;
+    font-family: 'Helvetica Neue';
+}
+
+#first-shot {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+#first-shot p {
+    text-align: center;
+    color: #ffffff;
+    letter-spacing: 10px;
+    margin: 0;
+}
+
+.project-first-shot {
+    width: 100%;
+    height: 100vh;
+}
+
+.first-project {
+    width: 100%;
+    height: 100vh;
+    background-image: url(widmo.png);
+    background-size: cover;
+}
+
+.second-project {
+    width: 100%;
+    height: 100vh;
+    background-image: url(objazd.png);
+    background-size: cover;
+}
+
+.third-project {
+    width: 100%;
+    height: 100vh;
+    background-image: url(salmon_landing.png);
+    background-size: cover;
+}
+
+
+@media only screen and (min-width: 768px) {
+    #first-shot p {
+        font-size: 2.5rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .second-project {
+        background-color: #F0E433;
+        background-image: none;
+    }
+
+    .third-project {
+        background: #fc5c7d;
+        background: linear-gradient(to right, #fc5c7d 0%, #6a82fb 100%);
+    }
+
+}
+
+@media only screen and (min-width: 1336px) {
+    #first-shot p {
+        font-size: 4rem;
+    }
+
+    .first-project {
+        float: left;
+        width: 50%;
+        height: 100vh;
+    }
+
+    .second-project {
+        width: 50%;
+        float: left;
+        height: 100vh;
+    }
+
+    .third-project {
+        width: 50%;
+        height: 100vh;
+        float: left;
+    }
+
+}
