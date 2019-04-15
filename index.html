@@ -2,30 +2,44 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" lang="pl">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="min_width_100.css">
     <title>liczbik</title>
+    <script type="text/javascript" src="minwidth.js"></script>
+    <script>
+        if (screen.width > 1000) {
+            window.location.replace("https://soultatsu.github.io/kolektywprojekt/");
+        } else {
+            window.location.replace("https://soultatsu.github.io/portfolio/");
+        }
+
+    </script>
 </head>
 
 <body>
-    <div id="first-shot">
-        <p>Immichalliczbik</p>
+    <div class="horizontal">
+        <div id="first-shot" class="item">
+            <p>Immichalliczbik</p>
+        </div>
+
+        <div id="about-me" class="item">
+            <img src="IMG_0100.jpg" class="item" alt="picture of me in the wild" />
+            <h3 class="title item">Michael Liczbik</h3>
+            <h3 class="subtitle item">UX/UI Designer</h3>
+        </div>
+
+        <div id="first-art" class="item">
+            <img src="widmo.jpg" alt="poster of industrial terror group" />
+            <h3 class="first-art-title">1984</h3>
+        </div>
+
+        <div id="second-art" class="item">
+            <img src="BSOD.png" alt="blue screen of death" />
+            <h3 class="second-art-title">BSOD</h3>
+        </div>
     </div>
-
-    <div class="project-first-shot">
-        <a href="https://www.behance.net/gallery/78402911/1984">
-            <div class="first-project"></div>
-        </a>
-
-        <a href="#">
-            <div class="second-project"></div>
-        </a>
-
-        <a href="#">
-            <div class="third-project"></div>
-        </a>
-
 </body>
 
 </html>
